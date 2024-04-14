@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Spice&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Audiowide&family=Croissant+One&family=Lobster&family=Lora&family=Nosifer&family=Pacifico&family=Satisfy&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #030a17;
+    background-image: url(./Event_Image/stars-COXq2hon.webp);
+    font-family: Audiowide , Nosifer , Domine;
+    height: 100vh;
+}
+
+
+.header{
+    height: 100px;
+    /* background-color:rgb(123, 89, 89); */
+}
+.navbar {
+    background-color: #030a17;
+    overflow: hidden;
+    position:relative;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: Nosifer;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #041101;
+    color: #53e63d;
+    border-bottom:1px solid #106104;
+    animation: alternate bounce 500ms infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+/* .heading{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    
+
+} */
+#event_heading{
+    font-size: larg;
+    /* color: #fbfcff !important; */
+    color: #16dede !important;
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: .6rem;
+    font-family: Nosifer;
+}
+
+
+  
+
+  .main_content {
+    padding: 20px;
+    font-family: Nosifer;
+}
+
+.heading {
+    text-align: center;
+}
+
+
+.sponsors_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* font-size:small; */
+    /* color: #fbfcff !important; */
+    font-size: 1.0rem;
+    font-weight: 400;
+    letter-spacing: .6rem;
+    font-family: Bungee spice;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.sponsor_card {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 80%;
+    width: 70%;
+    max-width:40%;
+
+
+ 
+}
+
+
+
+.sponsor_card_item {
+    margin: 0 10px;
+    width: 50%;
+    height: 20vh;
+    border: 1px solid #ccc;
+
+    /* border-radius: 100px; */
+    padding: 10px;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 9px rgb(58, 60, 71);
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+   
+}
+.title_card_item{
+  width: 100%;
+  height: 100%;
+}
+.media2{
+  background-image: url(./sponser_image/iiitians_network_logo.jpeg);
+  background-size: cover;
+  background-size: 100% 100%;
+ 
+}
+.media1{
+  background-image: url(./sponser_image/tom_logo.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+ 
+}
+
+.f1{
+  background-image: url(./sponser_image/tamana1.jpeg);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.f2{
+  background-image: url(./sponser_image/A3.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.f3{
+  background-image: url(./sponser_image/dominos.png);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.f4{
+  background-image: url(./sponser_image/likla.png);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.i1{
+  background-image: url(./sponser_image/codexp_logo.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.l2{
+  background-image: url(./sponser_image/stpi.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.b1{
+  background-image: url(./sponser_image/icici.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.sponsor_card_item img {
+    max-width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+    
+}
+@media screen and (max-width: 768px) {
+  #event_heading{
+    font-size: small;
+
+  }
+    .sponsor_card {
+      flex-direction: column;
+      align-items: center;
+      font-size: small;
+
+    }
+  }
+  
+  .sponsor_card_item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+.indi{
+    max-width:800;
+}
+
+
+
+.sponsor-card_item{
+    height: 30rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 2px rgb(52, 52, 53);
+
+    background-color: #06132c;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    padding: 10px;
+    /* background-color: white;
+    box-shadow: 0px 0px 15px 9px rgb(58, 60, 71); */
+
+}
+
+.sponsor-card_item:hover{
+    height: 115%;
+    width: 115%;
+  
+}
+
+
+
+
+
+
+
+/* Add techy animation to h2 tags */
+.sponsors_section h2 {
+    font-size: 2rem;
+    position: relative;
+    margin-top: 40px;
+    color: #16dede;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+ .hero{
+  justify-content: center;
+ }
+
+  /* Add techy animation to h2 tags */
+
+  
+  .sponsors_section h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 8px;
+    height: 100%;
+    background-color: #d1750b;
+    animation: techyAnimation 1s infinite alternate; /* Apply a techy animation */
+  }
+  
+  @keyframes techyAnimation {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  
+  .sponsors_section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #16dede;
+    transition: width 0.3s ease;
+  }
+  
+  .sponsors_section h2:hover::after {
+    width: 100%;
+  }
+  
+
+@media screen and (max-width: 768px) {
+  .sponsor_card {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .sponsors_section h2 {
+    font-size: 1.4rem;
+    position: relative;
+    margin-top: 40px;
+    color: #16dede;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+.sp{
+  font-size: 1.1rem;
+
+}
+
+p{
+  font-size: 0.4rem;
+
+}
+  
+  .sponsor_card_item {
+    width: 80%; 
+    margin: 10px 0;
+  }
+
+  .sponsors_section h2::before {
+    display: none; /* Hide techy animation on smaller screens */
+  }
+
+  .sponsors_section h2::after {
+    width: 100%; /* Always display full underline on smaller screens */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Adjust font size for navigation links */
+  }
+
+  #event_heading {
+    font-size: 2rem; /* Adjust font size for event heading */
+    letter-spacing: 1px; /* Adjust letter spacing for better readability */
+  }
+
+  .footer {
+    padding: 20px 10px; /* Adjust padding for better spacing */
+  }
+
+  .footer .navigate {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment for navigation links */
+  }
+
+  .hero_area {
+    display: none; /* Hide hero area with waves on smaller screens */
+  }
+}
+
+.audiowide{
+    font-family: Audiowide,'Courier New', Courier, monospace;
+
+}
+
+.change-color{
+    /* font-size: 22px;  */
+    font-family: Bungee Spice,'Courier New', Courier, monospace;
+}
+
+.title{
+  width: 130%;
+}

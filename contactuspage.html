@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers</title>
+  <link rel="icon" href="../Images/main_logo.png">
+  <link rel="stylesheet" href="./contactuspage.css">
+  <link rel="stylesheet" href="../index_page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <img id ="logo12" src="../Images/main_logo.png" alt="" height="50px" width="50px">
+      <a class="nav-link" href="../all events page/all_event.html">Events</a>
+      <a class="nav-link" href="../sponser.html">Sponsors</a>
+      <a class="nav-link" href="./developer/developer.html">Developer</a>
+      <a class="nav-link" href="../index.html">Home</a>
+    </div>
+  </div>
+  <div class="main_content">
+    <div class="heading">
+        <p id="event_heading">Our  Tech Teams</p>
+    </div>
+    <div class="organizers-container" id="organizers-container">
+      <!-- Organizer cards will be dynamically generated here -->
+    </div>
+  </div>
+
+  <script>
+    const organizerData = [
+      { name: "Alok", position: "Gen Tech Secretary", linkedin: "#", phone: "7417418837" },
+      { name: "Aditi", position: "Joint Tech Secretary", linkedin: "https://in.linkedin.com/in/aditi-vidyarthi-7a9b36253", phone: "9026252723" },
+      { name: "Aaryan Kumar", position: "Joint Tech Technical", linkedin: "https://www.linkedin.com/in/aaryankumarsinha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", phone: "9528314394" },
+     
+      { name: "NIDHI", position: "Account & Registration Head", linkedin: "https://www.linkedin.com/in/nidhi-hk108", phone: "9142348481" },
+
+      { name: "Shreedhar", position: "Sponsorship & Tech Event lead", linkedin: "https://in.linkedin.com/in/shreedhar-anand-23a699214", phone: "9060749243" },
+      { name: "Shashwat  ", position: "Sponsorship & Tech team", linkedin: "https://www.linkedin.com/in/shashwat-kumar-41a610245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", phone: "9708912332" },
+      { name: "Dnyandeep ", position: "Sponsorship & Tech team", linkedin: "#", phone: "8623959964" },
+      { name: "Anubhav", position: "Hackathon Event Organiser", linkedin: "#", phone: "7355122717" },
+      { name: "Deepanshu ", position: "Sponsorship and Hackathon event", linkedin: "https://www.linkedin.com/in/deepanshu-singh-gautam-422318258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", phone: "9936142546" },
+      { name: "Aman Ahmad", position: "Design lead", linkedin: "https://www.linkedin.com/in/aman-ahmad", phone: "6306823356" },
+      { name: "Ayush Pandey", position: "Esports Event Lead", linkedin: "#", phone: "9336779708" },
+      
+
+      { name: "Chetan Pyasi", position: "Sponsor team, hackathon team.", linkedin: "https://www.linkedin.com/in/chetan-pyasi-956173256", phone: "8618543784" },
+      { name: "Balkishan Bajpay", position: "CP EVENT ORGANISER", linkedin: "www.linkedin.com/in/balkishan-bajpay", phone: "07877058098" },
+      
+      { name: "Vishal Srinivasan", position: "CP EVENT ORGANISER ", linkedin: "https://www.linkedin.com/in/vishal-srinivasan-661ab5257", phone: "8248910030" },
+      
+{ name: "Ayush Ravi", position: "Event Lead", linkedin: "https://www.linkedin.com/in/ayush-ravi-0b1249257", phone: "7666539163" },
+{ name: " Sameer Reddy", position: "Esports Team", linkedin: "https://www.linkedin.com/in/sameerreddy213/", phone: "9652877199" },
+{ name: "Trishansh Verma", position: "Poster designer", linkedin: "https://www.linkedin.com/in/trishansh-verma-b22a09291", phone: "9329750160" },
+{ name: "Yash Goswami", position: "Design team member", linkedin: "#", phone: "7850032749" },
+{ name: "Shivam singh", position: "Member of eSports Event", linkedin: "#", phone: "+917005627424" },
+{ name: "Piyush Prasad", position: "Poster design", linkedin: "#", phone: "9142396828" },
+{ name: "Aishwary Raj", position: "Designer, Video Editor", linkedin: "#", phone: "9984641146" },
+{ name: "Yogita Kumari", position: "Designing team poster designer", linkedin: "https://www.linkedin.com/in/yogita-kumari-090277297", phone: "7584041059" },
+{ name: "Prince Yadav", position: "Design team", linkedin: "#", phone: "9120409207" },
+{ name: "Rahul Sharma", position: "Design team", linkedin: "https://www.linkedin.com/in/rahul-sharma-91b2bb2a3", phone: "6396165371" },
+{ name: "Ritesh Singh", position: "In Sponsorship team and member of volunteers", linkedin: "https://www.linkedin.com/in/ritesh-singh-377b95255", phone: "9161753661" },
+{ name: "Arvind Pathak", position: "Hackathon Event Organiser", linkedin: "#", phone: "9971647357" },
+{ name: "Shashi Bhushan", position: "Web support team", linkedin: "https://www.linkedin.com/in/shashi-bhushan-kumar-796b53259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", phone: "7782899732" },
+{ name:"Ram Ashish Yadav",position:"Web support team",linkedin:"https://www.linkedin.com/in/ram-ashish-yadav-851320282",phone:"8318158744"},
+{name:"Aryan kashyap", position:"support team", linkdein: "https://www.linkedin.com/in/aryan-kashyap-335a61257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",phone:"9973293999"},
+{ name: "Yash Dehariya", position: "Event lead for robo war and line follower", linkedin: "https://www.linkedin.com/in/yash-dehariya-82b91b257", phone: "6009312042" },
+{ name: "Aman Kumar", position: "Editing Team", linkedin: "https://www.linkedin.com/in/aman-kumar-a21a94257", phone: "9311209203" },
+{ name: "Ayush Kumar", position: "Design and Media", linkedin: "https://www.linkedin.com/in/ayush-kumar-792916257", phone: "8239322263" },
+{ name: "Rahul Gogra", position: " Bug Bounty Event Organizer", linkedin: "https://www.linkedin.com/in/rahul-gogra-ba4135203", phone: "7976608292" },
+{ name: "Akanksha Gupta", position: "Working and Support Team Member", linkedin: "www.linkedin.com/in/akanksha-gupta-a9241028b", phone: "9410152288" },
+{ name: "Alaukik Patel", position: "Sponsorship Team", linkedin: "https://www.linkedin.com/in/alaukik-patel-614152257", phone: "6386695484" },
+
+{ name: "Ashutosh Ranjan", position: "Sponsorship team", linkedin: "https://www.linkedin.com/in/ashutosh-ranjan-558964248", phone: "6200807526" },
+{ name: "Anish Kumar", position: "Event lead (robo soccer)", linkedin: "https://www.linkedin.com/in/anish-kumar-478389290/", phone: "9905468566" },
+{ name: "RUPAK BARMAN", position: "Event Head of Apex Arena Esports tournament", linkedin: "linkedin.com/in/rupak-barman-286621303", phone: "9593927778" },
+{ name: "Ankit Yadav", position: "Poster design team and volunteer", linkedin: "https://www.linkedin.com/in/ankit-yadav-7a1624284", phone: "8176064263" },
+
+    ];
+
+    function generateOrganizerCard(organizer) {
+      return `
+        <div class="organizer-card">
+          <div class="organizer-details">
+            <h2>${organizer.name}</h2>
+            <p>${organizer.position}</p>
+            <p>
+              <a href="${organizer.linkedin}">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i> 
+              </a>
+            </p>    
+            <p>
+              <i class="fa-solid fa-phone" style="color: #490dfd;"></i> ${organizer.phone}
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderOrganizers() {
+      const container = document.getElementById('organizers-container');
+      container.innerHTML = ''; // Clear previous content
+
+      organizerData.forEach(organizer => {
+        container.innerHTML += generateOrganizerCard(organizer);
+      });
+    }
+
+    // Call the renderOrganizers function to generate organizer cards on page load
+    renderOrganizers();
+  </script>
+</body>
+</html>

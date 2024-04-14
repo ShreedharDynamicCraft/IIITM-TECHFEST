@@ -1,0 +1,163 @@
+
+.abc{   border: 1px;
+       margin:7vh;
+       text-align: center;
+       background-color: transparent;
+       border-radius: 2vh; 
+}
+
+.abc2{   border: 1px ;
+    text-align: center;
+    margin:7vh;
+    background-color: transparent;
+    border-radius: 2vh;  
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding-top: 0px;
+    padding-bottom: 100px;
+}  
+   
+.abc3{   border: 1px ;
+    position: absolute;
+    margin-left:35vw;
+    text-align:center;
+    background-color: transparent;
+    border-radius: 2vh;  
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+   .imgcon{
+    display : flex;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr ; */
+   }
+  .pic{
+          border: 0.2vh ;
+          height: 12vh;
+          width:10vw;
+          margin-bottom: 2vw;
+          background-repeat: no-repeat;
+          justify-content: center;
+          object-fit: scale-down ;
+          overflow: hidden;
+          background-size: contain;
+          background-repeat: no-repeat;
+          
+  }
+.pic img{
+   height:12vh;
+   width:10vw;
+}
+
+.abc3 .pic{
+   height:20vh;
+   width:10vw;
+}
+   .abc3 img{
+   height:20vh;
+   width:10vw;
+   }
+
+   .column-1{
+      display: flex;
+      margin:0px;
+      padding:0px;
+   }
+
+@media (max-width:1600px){
+
+   .column-1{
+      flex-direction:column;
+   }
+   .abc3{
+         display: none;
+   } 
+
+   .waves{
+         height: 10vh;
+   }
+   .pic{
+            margin-left:5px;
+         width:30vw; 
+      }
+
+   .pic img{
+      width: max-content; 
+   }
+
+}
+.hero_area {
+   position: relative;
+   bottom: -5vh;
+   /* top: 10vh; */
+   /* height: 20vh; */
+ }
+ 
+ .waves {
+   width: 100%;
+   height: 20vh;
+   max-height: 150px;
+   bottom: -3vh;
+   left: 0;
+   margin-bottom:-10px;
+   padding:0px;
+ }
+ 
+ .parallax>use {
+   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+ }
+ 
+ .parallax>use:nth-child(1) {
+   animation-delay: -2s;
+   animation-duration: 7s;
+ }
+ 
+ .parallax>use:nth-child(2) {
+   animation-delay: -3s;
+   animation-duration: 10s;
+ }
+ 
+ .parallax>use:nth-child(3) {
+   animation-delay: -4s;
+   animation-duration: 13s;
+ }
+ 
+ .parallax>use:nth-child(4) {
+   animation-delay: -5s;
+   animation-duration: 20s;
+ }
+ 
+ @keyframes move-forever {
+   0% {
+       transform: translate3d(-90px, 0, 0);
+   }
+ 
+   100% {
+       transform: translate3d(85px, 0, 0);
+   }
+ }
+
+
+ 
+.sponsor_card {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   height: 80%;
+   width: 70%;
+   max-width:40%;
+}
+
+
+ .media2{
+   background-image: url(./sponser_image/Logo_Cubeten2.png);
+   background-size: cover;
+   background-size: 100% 100%;
+  
+ }
+ .media1{
+   background-image: url(./sponser_image/tom_logo.jpg);
+   background-size: cover;
+   background-size: 100% 100%;
+  
+ }

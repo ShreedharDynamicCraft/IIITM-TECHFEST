@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #030a17;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #041101;
+    color: #53e63d;
+    border-bottom:1px solid #106104;
+    animation: alternate bounce 500ms infinite;
+}
